@@ -1,1 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastram - Premium Fashion Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>VASTRAM</h1>
+                <p class="tagline">Premium Fashion</p>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#shop" class="nav-link">Shop</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="icon-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                <button class="icon-btn" id="cartBtn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="icon-btn" id="userBtn"><i class="fas fa-user"></i></button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="close-search" id="closeSearch">&times;</button>
+        <div class="search-container">
+            <input type="text" placeholder="Search for products..." class="search-input" id="searchInput">
+            <button class="search-submit"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <span class="hero-subtitle">New Collection 2025</span>
+                    <h2 class="hero-title">Elegance Redefined</h2>
+                    <p class="hero-description">Discover our exclusive range of premium fashion wear</p>
+                    <button class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                    </div>
+                    <h3>Men's Wear</h3>
+                    <a href="#shop" class="category-link">Explore Collection →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-female"></i>
+                        </div>
+                    </div>
+                    <h3>Women's Wear</h3>
+                    <a href="#shop" class="category-link">Explore Collection →</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <div class="placeholder-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-child"></i>
+                        </div>
+                    </div>
+                    <h3>Kids Collection</h3>
+                    <a href="#shop" class="category-link">Explore Collection →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="men">Men</button>
+                    <button class="filter-btn" data-filter="women">Women</button>
+                    <button class="filter-btn" data-filter="kids">Kids</button>
+                </div>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Banner -->
+    <section class="collection-banner" id="collections">
+        <div class="banner-content">
+            <h2>Winter Collection 2025</h2>
+            <p>Stay warm, stay stylish with our exclusive winter collection</p>
+            <button class="btn btn-light">Explore Collection</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="placeholder-img" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 400px;">
+                        <i class="fas fa-store" style="font-size: 80px; color: white;"></i>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2>About Vastram</h2>
+                    <p>Vastram is your destination for premium fashion wear. We believe in delivering quality, style, and comfort in every piece we create.</p>
+                    <p>Our collections are carefully curated to bring you the latest trends while maintaining timeless elegance. From traditional wear to contemporary fashion, we have something for everyone.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Free Shipping</h4>
+                            <p>On orders above ₹999</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-undo"></i>
+                            <h4>Easy Returns</h4>
+                            <p>30-day return policy</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Secure Payment</h4>
+                            <p>100% secure transactions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Visit Us</h4>
+                        <p>Kharghar, Navi Mumbai<br>Maharashtra, India</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>info@vastram.com</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>VASTRAM</h3>
+                    <p>Premium fashion for everyone. Style that speaks, comfort that lasts.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new arrivals and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vastram. All rights reserved. | Designed with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-block">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
